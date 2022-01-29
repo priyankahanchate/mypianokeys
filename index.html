@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <script defer src="/JS/index.js"></script>
+    <script defer src="/JS/taskManager.js"></script> -->
+    <title>Task-App</title>
+</head>
+
+<body style="background-image:url(/image3.jpg)" >
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light text justify-content-center" >
+                <a id="text-size" class="navbar-brand" href="name" style="font-size: 35px; font-weight: bold"><strong><i>TASK APP</i></strong></a>
+        </nav>
+    </header>
+    <!-- Name input -->
+    <div class="container-fluid" >
+        <div class = "row">
+            <div class="col">
+                <div class="row mt-3">
+                    <div class="col-lg-8 text-center"> 
+                    <label for="name" class="text-uppercase font-weight-bold">Task Name: </label>
+                    </div>
+                </div>
+                <div class="row justify-content-center"> 
+                    <div class="col-lg-6"  >
+                    <div id="name-input" class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter the task" name="name"
+                            required  >
+                        <div class="invalid-feedback">
+                        Input > 5 letters
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Description input -->
+        <div class="row mt-2">
+            <div class="col-lg-8 text-center">
+                <label for="description" class="text-uppercase font-weight-bold">Description: </label>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <textarea type="text" class="form-control" id="description" placeholder="Describe the task"
+                            name="description" required></textarea>
+                    <div class="invalid-feedback">
+                            Input > 5 words
+                    </div>
+            </div>
+        </div>
+        <!-- Assignee Input -->
+        <div class="row mt-4">
+            <div class="col-lg-8 text-center">
+                <label for="assigned-person" class="text-uppercase font-weight-bold">Assigned To: </label>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div id="assigned-input" class="form-group">
+                    <input type="text" class="form-control" id="assigned-person" placeholder="Assign a person"
+                        name="assigned-person" required>
+                    <div class="invalid-feedback">
+                        Input > 5 words
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Due Date input -->
+        <div class="row mt-2">
+            <div class="col-lg-8 text-center">
+                <label for="date-input" class="text-uppercase font-weight-bold">Due Date: </label>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="date-target" class="col-lg-6">
+                <input type="date" class="form-control" id="date-input" name="date-input">
+                <div class="invalid-feedback">
+                    Input a date
+                </div>
+            </div>
+        </div>
+        <!-- Status Input -->
+        <div class="row mt-4">
+            <div class="col-lg-8 text-center">
+                <label for="status" class="text-uppercase font-weight-bold">Status: </label>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="status-input" class="form-group col-lg-6">
+                <select class="form-control" id="status" name="status">
+                    <option value=''>Select an option</option>
+                    <option>Pending</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
+                <div class="invalid-feedback">
+                        Choose a status
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mt-4">
+                <div id="submit-button">
+                    <input type="submit" class="btn btn-lg active btn-block" style = "background-color:lightgray" value="Submit">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    </div>
+    </div>
+        <div class="container-fluid mt-5" >
+        <div id="task-card" class="row justify-content-center py-4 ">
+        </div>
+    </div>
+    <footer class="d-none d-md-block pt-4 container-fluid mt-5" style="background-color:lightgray ;" id="footer" style="background-color: lightblue;">
+        <!-- <div class="container-fluid" style="background-color:gray ;"> -->
+            <div class="row ">
+                <div class="col">
+                    <p style="color: black">&copy; 2022 TASK-APP. All rights reserved</p>
+                </div>
+                <div class="col text-right">
+                    <a href="#" class="card-link" style="color: black;">Terms</a>
+                    <a href="#" class="card-link" style="color: black">privacy</a>
+                </div>
+            </div>
+        <!-- </div> -->
+    </footer>
+
+    <script src="js/taskManager.js" defer></script>
+    <script src="js/index.js" defer></script>
+</body>
+
+</html>
