@@ -1,6 +1,43 @@
-h1{
+/* h1{
   color: #0000FF;
 }
 h2{
   color: #00CCFF;
+} */
+body {
+  font-family: Arial;
+  font-size: 11px;
+  color: #ffffff;
+  background: #202020 url(/image3.jpg) no-repeat top center fixed;
+  background-size: cover;
+  /* background-image: url('http://placekitten.com/1200/800'); */
+  opacity: 0.75;
 }
+
+#icons {
+  position: absolute;
+  bottom: 22%;
+  right: 8%;
+  width: 400px;
+  height: 80px;
+  z-index: 8;
+  transform: rotate(-57deg); 
+  -ms-transform: rotate(-57deg); 
+  -webkit-transform: rotate(-57deg); 
+  -moz-transform: rotate(-57deg);https://coder-coder.com/background-image-opacity/
+}
+
+#contact { 
+  float: left; 
+  cursor: pointer; 
+}
+
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+/* .hero {
+  background-image: url('http://placekitten.com/1200/800');
+  opacity: 0.75;
+} */
