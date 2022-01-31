@@ -1,3 +1,9 @@
+const dateElement = document.querySelector("#display-date");
+let today = new Date();
+const [month, day, year] = [today.getMonth()+1, today.getDate(), today.getFullYear()];
+let dateString = `Date: ${day} / ${month} / ${year}`;
+dateElement.innerHTML = dateString;
+
 const description = document.querySelector('#description');
 const name2 = document.querySelector('#name');
 const assignedPerson = document.querySelector('#assigned-person');
