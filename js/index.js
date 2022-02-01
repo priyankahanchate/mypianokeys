@@ -72,6 +72,8 @@ submitButton.addEventListener('click', (event) => {
     };
     newTask.addTask(name2.value, description.value, assignedPerson.value, dateItself.value, statusCheck.value);
     removeFields();
+    newTask.save();
+    // newTask.load();
     newTask.render();
     // newTask.save()
 })
@@ -97,6 +99,7 @@ goToTasks.addEventListener('click', (event) => {
         if (task.status === 'In Progress' || task.status === 'Pending') {
             task.status = 'Completed';
             newTask.save();
+        
             newTask.render();
         };
 

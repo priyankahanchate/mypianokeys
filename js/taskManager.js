@@ -91,8 +91,13 @@ class TaskManager {
         };
         if (localStorage.getItem('currentId')) {
             let currentId = localStorage.getItem('currentId');
-            currentId = Number(currentId);
-            this.currentId = JSON.parse(currentId);
+
+            this.currentId  = Number(currentId);
+
+            // this.currentId = JSON.parse(currentId);
         };
     };
 }
+
+
+
