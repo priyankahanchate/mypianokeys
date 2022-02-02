@@ -11,7 +11,7 @@ const dateItself = document.querySelector('#date-input');
 const statusCheck = document.querySelector('#status');
 const submitButton = document.querySelector('#submit-button');
 const goToTasks = document.querySelector('#task-card');
-// const clearButton = document.querySelector('#clear-button')
+const clearButton = document.querySelector('#clear-button')
 // console.log(clearButton)
 const newTask = new TaskManager();
 newTask.load();
@@ -77,6 +77,11 @@ submitButton.addEventListener('click', (event) => {
     newTask.render();
     // newTask.save()
 })
+clearButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    // console.log('inside clear button')
+    removeFields()
+}) 
 function removeFields() {
     name2.value = '';
     name2.classList.remove('is-valid');
