@@ -94,7 +94,7 @@ class TaskManager {
 
             this.currentId  = Number(currentId);
 
-            // this.currentId = JSON.parse(currentId);
+            this.currentId = JSON.parse(currentId);
         };
     };
 }

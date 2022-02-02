@@ -14,7 +14,7 @@ const goToTasks = document.querySelector('#task-card');
 // const clearButton = document.querySelector('#clear-button')
 // console.log(clearButton)
 const newTask = new TaskManager();
-// newTask.load();
+newTask.load();
 newTask.render();
 submitButton.addEventListener('click', (event) => {
     event.preventDefault();
