@@ -12,6 +12,7 @@ const statusCheck = document.querySelector('#status');
 const submitButton = document.querySelector('#submit-button');
 const goToTasks = document.querySelector('#task-card');
 const clearButton = document.querySelector('#clear-button')
+
 // console.log(clearButton)
 const newTask = new TaskManager();
 newTask.load();

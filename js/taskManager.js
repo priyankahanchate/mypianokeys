@@ -11,7 +11,7 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
             <p class="card-text"><b>Task status: ${status}</b></p>
             <div class="card-footer row mt-4">
                 <div class="col-6 justify-content-center">
-                    <button id="done-invisible" class="btn btn-outline-success done-button">
+                    <button id="done-invisible" class="${String(status).toLowerCase()===('completed') ? 'invisible' : ''} btn btn-outline-success done-button">
                         Done
                     </button>
                 </div>
