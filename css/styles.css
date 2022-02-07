@@ -8,7 +8,7 @@ body {
   font-family: Arial;
   font-size: 11px;
   color: #ffffff;
-  background: #202020 url(/image3.jpg) no-repeat top center fixed;
+  background: #202020 url(./image3.jpg) no-repeat top center fixed;
   background-size: cover;
   /* background-image: url('http://placekitten.com/1200/800'); */
   opacity: 0.75;
